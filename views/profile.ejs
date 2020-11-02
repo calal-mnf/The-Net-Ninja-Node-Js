@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Js Tutorial The Net Ninjas</title>
+    <style>
+      body {
+        background-color: rgb(110, 241, 110);
+        font-family: verdana;
+        color: #fff;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+      <%- include ('partials/nav')  %>
+    <h1>Wellcome to the profile of <%= person %></h1>
+    <p><strong>Age:</strong><%= data.age %></p>
+    <p><strong>Job:</strong><%= data.job %></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <% data.hobbies.forEach(function(item) { %>
+
+      <li><%= item %></li>
+
+      <% }); %>
+    </ul>
+  </body>
+</html>
