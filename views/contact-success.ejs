@@ -30,16 +30,8 @@
 <body>
     <%- include ('partials/nav')  %>
     <h1>Contact us!</h1>
-    <p>We will find you!</p>
-    <form id="contact-form" method="POST" action="/contact">
-        <label for="">Who</label>
-<input type="text" name="who" value="<%= qs.person %>">
-<label for="department">Dep</label>
-<input type="text" name="department" value="<%= qs.dept %>">
-<label for="email">Mail</label>
-<input type="email" name="email">
-<input type="submit">
-    </form>
+    <p>You contacted <%= data.who %> in the <%= data.department %> department </p>
+<p><%= data.email %></p>
 </body>
 
 </html>
