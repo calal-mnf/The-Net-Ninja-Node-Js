@@ -31,6 +31,12 @@
     <%- include ('partials/nav')  %>
     <h1>Contact us!</h1>
     <p>We will find you!</p>
+    <form id="contact-form" method="POST" action="/contact">
+<input type="text" value="<%= qs.person %>">
+<input type="text" value="<%= qs.dept %>">
+<input type="email">
+<input type="submit">
+    </form>
 </body>
 
 </html>
