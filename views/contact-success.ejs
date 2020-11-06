@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node Js Tutorial The Net Ninjas</title>
-    <link rel="stylesheet" href="../assets/style.css">
     <style>
         body {
-            background-color: tomato;
+            background-color: yellow;
             font-family: verdana;
-            color: #fff;
+            color: rgb(206, 43, 43);
             padding: 30px;
         }
 
@@ -30,8 +29,9 @@
 
 <body>
     <%- include ('partials/nav')  %>
-    <h1>Wellcome to the most awesome website on the net</h1>
-    <p>You won't find a website better anywhere else!</p>
+    <h1>Contact us!</h1>
+    <p>You contacted <%= data.who %> in the <%= data.department %> department </p>
+<p><%= data.email %></p>
 </body>
 
 </html>
